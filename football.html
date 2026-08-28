@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的足球赛程预告</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f6f9; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; }
+        h2 { text-align: center; color: #1e293b; }
+        .match-card { background: #fff; padding: 15px 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #2563eb; }
+        .league-tag { font-size: 12px; color: #64748b; font-weight: bold; margin-bottom: 5px; }
+        .match-time { font-size: 14px; color: #0284c7; margin-bottom: 8px; }
+        .match-teams { font-size: 18px; font-weight: bold; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+        .match-status { font-size: 13px; color: #16a34a; background: #f0fdf4; padding: 6px 10px; border-radius: 6px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>⚽ 焦点比赛直播预告</h2>
+    
+    <!-- 陕西联合比赛 -->
+    <div class="match-card">
+        <div class="league-tag">2026年中甲联赛第21轮</div>
+        <div class="match-time">📅 08月29日(明天) 19:00</div>
+        <div class="match-teams">
+            <span>陕西联合 vs 延边龙鼎</span>
+        </div>
+        <div class="match-status">🏠 陕西主场作战，西北狼加油！</div>
+    </div>
+
+    <!-- 皇马比赛占位 -->
+    <div class="match-card" style="border-left-color: #eab308;">
+        <div class="league-tag">西甲联赛</div>
+        <div class="match-time">📅 近期赛程准备中</div>
+        <div class="match-teams">
+            <span>皇家马德里</span>
+        </div>
+        <div class="match-status" style="color: #ca8a04; background: #fefce8;">⏳ 随时准备迎战劲敌</div>
+    </div>
+</div>
+
+</body>
+</html>
