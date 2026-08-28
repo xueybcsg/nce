@@ -284,4 +284,16 @@ button, select, .interactive-btn, .q-btn {
 button:active, select:active, .interactive-btn:active, .q-btn:active {
     transform: scale(0.95);
 }
+/* 2. 所有按钮和下拉框的 Q 弹触觉反馈 */
+button, select, .interactive-btn, .q-btn {
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+button:active, select:active, .interactive-btn:active, .q-btn:active {
+    transform: scale(0.95);
+}
+/* 3. 隐藏右上角的 Blog 按钮 */
+.header-actions .status-pill {
+    display: none !important;
+}
 </style>
+
