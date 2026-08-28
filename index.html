@@ -259,3 +259,29 @@
 <script type="module" src="js/main.js"></script>
 </body>
 </html>
+<style>
+/* 1. 当前高亮句子的智能呼吸浮动动效 */
+.highlight-sentence, .active-sentence {
+    background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 154, 158, 0.15)) !important;
+    border-left: 4px solid #ff6b6b !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: breathing 2s ease-in-out infinite;
+}
+
+@keyframes breathing {
+    0%, 100% { box-shadow: 0 4px 15px rgba(255, 107, 107, 0.15); }
+    50% { box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3); }
+}
+
+/* 2. 所有按钮和下拉框的 Q 弹触觉反馈 */
+button, select, .interactive-btn, .q-btn {
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+button:active, select:active, .interactive-btn:active, .q-btn:active {
+    transform: scale(0.95);
+}
+</style>
