@@ -35,23 +35,18 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- 粘贴在这一行下面 -->
 <style>
-    /* 1. 整个页面的背景换成温柔的淡红色 */
-    body {
-        background: #fff1f2 !important;
-        background-attachment: fixed !important;
-    }
-    
-    /* 2. 把上面所有的卡片、播放器、主内容区（包括你截图里所有的白框区域）全部变成同一个淡红色，让它们和背景融为一体 */
-    .lyrics-container, main, header, .card, .player-container, div[class*="box"], section {
+    /* 1. 全局背景和所有容器、卡片全部强制改成统一的淡红色 */
+    body, html, .lyrics-container, main, header, div[class*="card"], div[class*="box"], section, article {
         background: #fff1f2 !important;
         background-color: #fff1f2 !important;
-        border: 1px solid #fecdd3 !important;
-        border-radius: 16px !important;
+    }
+    
+    /* 2. 去掉卡片多余的白色阴影和边框，让它们彻底融为一体 */
+    .lyrics-container, main, div[class*="card"] {
+        border: none !important;
         box-shadow: none !important;
     }
 </style>
-
-
 
 <link rel="apple-touch-icon" href=...
 
