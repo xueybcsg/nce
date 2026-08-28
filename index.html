@@ -35,24 +35,22 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 <!-- 粘贴在这一行下面 -->
 <style>
-    /* 1. 治愈系的日系动漫浅空蓝背景 */
+    /* 1. 整个页面的背景换成温柔的淡红色 */
     body {
-        background: #f0f7ff !important;
+        background: #fff1f2 !important;
         background-attachment: fixed !important;
     }
     
-    /* 2. 把卡片区域换成极度柔和的浅色，彻底消灭刺眼纯白 */
-    .lyrics-container, main {
-        background: #eef2f7 !important;
-        background-color: #eef2f7 !important;
-
-        border: 1px solid #dbeafe !important;
+    /* 2. 把上面所有的卡片、播放器、主内容区（包括你截图里所有的白框区域）全部变成同一个淡红色，让它们和背景融为一体 */
+    .lyrics-container, main, header, .card, .player-container, div[class*="box"], section {
+        background: #fff1f2 !important;
+        background-color: #fff1f2 !important;
+        border: 1px solid #fecdd3 !important;
         border-radius: 16px !important;
-        padding: 20px !important;
-        margin-top: 20px !important;
-        box-shadow: 0 4px 20px rgba(59, 130, 246, 0.06) !important;
+        box-shadow: none !important;
     }
 </style>
+
 
 
 <link rel="apple-touch-icon" href=...
