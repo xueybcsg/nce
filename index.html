@@ -47,8 +47,8 @@
             box-shadow: none !important;
     }
 
-            /* 彻底隐藏所有含 support 或 sponsor 的打赏元素、按钮、弹窗 */
-    #supportModal, [class*="support"], [id*="support"], [class*="sponsor"] {
+            /* 仅隐藏底部触发打赏弹窗的按钮或链接，保留小火苗提示 */
+    a[href*="support"], button[id*="support"], .support-btn {
         display: none !important;
     }
 
