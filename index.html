@@ -47,10 +47,11 @@
             box-shadow: none !important;
     }
 
-    /* 3. 完美隐藏打赏弹窗 */
-    #supportModal {
+            /* 彻底隐藏所有含 support 或 sponsor 的打赏元素、按钮、弹窗 */
+    #supportModal, [class*="support"], [id*="support"], [class*="sponsor"] {
         display: none !important;
     }
+
 </style>
 
 
